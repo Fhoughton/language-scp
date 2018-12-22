@@ -1,0 +1,4 @@
+'.source.scp':
+  editor:
+    commentStart: '//'
+    tabLength: 4

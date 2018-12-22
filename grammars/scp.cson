@@ -1,0 +1,40 @@
+name: 'SCP'
+scopeName: 'source.scp'
+fileTypes: [
+  'scp'
+]
+foldingStartMarker: '\\{\\s*$'
+foldingStopMarker: '^\\s*\\}'
+patterns: [
+  {
+    match: '(//).*$\\n?'
+    name: 'comment.line.doubleslash.scp'
+  }
+  {
+    match: 'state (\\w|\\-|\\!|\\?)*'
+    captures:
+      2:
+        name: 'storage.type.function-type.scp'
+      4:
+        name: 'entity.name.function.scp'
+    name: 'meta.function.scp'
+  }
+  {
+    name: "comment.block.scp"
+    begin: "/\\*"
+    beginCaptures:
+      0:
+        name: "punctuation.definition.comment.scp"
+    end: "\\*/"
+    endCaptures:
+      0:
+        name: "punctuation.definition.comment.scp"
+  }
+  {
+    begin: "(?<!\\.)\\b(Conditions)\\b\\s*(?=\\()"
+    beginCaptures:
+      "1":
+        name: "keyword.control.conditional.if.scp"
+    end: "(?<=\\})|(?=;)"
+  }
+]

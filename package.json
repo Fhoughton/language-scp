@@ -1,0 +1,17 @@
+{
+  "name": "language-scp",
+  "version": "0.0.0",
+  "description": "Support for the the Lego Game scripting language SCP in atom.",
+  "engines": {
+    "atom": "*"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Fhoughton/language-scp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Fhoughton/language-scp/issues"
+  },
+  "license": "CC3"
+}

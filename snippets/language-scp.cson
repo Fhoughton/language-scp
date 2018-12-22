@@ -1,0 +1,10 @@
+'.source.scp':
+  statehead:
+    prefix: 'stp'
+    body: '(state ${1:name}'
+  singlelinecomment:
+    prefix: 'cs'
+    body: '//$0'
+  multilinecomment:
+    prefix: 'cml'
+    body: '/*$0*/'
